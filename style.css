@@ -1,0 +1,73 @@
+/* Estilo geral */
+body {
+  font-family: "Arial", sans-serif; /* Fonte legível e versátil */
+  background-color: #f2f2f2; /* Cor de fundo neutra e relaxante */
+  color: #333; /* Cor de texto escura e contrastante */
+}
+
+.container {
+  width: 80%; /* Largura ajustável da lista */
+  margin: 40px auto; /* Espaçamento em torno da lista */
+  padding: 20px; /* Espaçamento interno da lista */
+  border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar a lista */
+  background-color: #fff; /* Cor de fundo branca para melhor legibilidade */
+}
+
+h1 {
+  text-align: center; /* Título centralizado */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Estilos do campo de entrada */
+input[type="text"] {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 12px; /* Espaçamento interno do campo */
+  border: 1px solid #ccc; /* Borda leve para visualização */
+  border-radius: 4px; /* Bordas arredondadas para suavizar o visual */
+  box-sizing: border-box; /* Manter o tamanho do campo mesmo com a borda */
+  font-size: 16px; /* Tamanho de fonte legível */
+}
+
+/* Estilos do botão de adicionar */
+button {
+  background-color: #4caf50; /* Verde para representar adição */
+  color: white; /* Texto branco para contraste */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border: none; /* Remover borda padrão */
+  border-radius: 4px; /* Bordas arredondadas para suavizar o visual */
+  cursor: pointer; /* Indicar que é clicável */
+  transition: background-color 0.3s; /* Efeito de hover */
+}
+
+button:hover {
+  background-color: #45a049; /* Verde mais escuro no hover */
+}
+
+/* Estilos da lista de tarefas */
+#listaTarefas {
+  list-style: none; /* Remover marcadores padrão */
+  padding: 0; /* Remover espaçamento interno padrão */
+}
+
+#listaTarefas li {
+  padding: 15px; /* Espaçamento entre os itens da lista */
+  border-bottom: 1px solid #ddd; /* Linha divisória entre os itens */
+  cursor: pointer; /* Indicar que os itens são clicáveis */
+}
+
+#listaTarefas li:last-child {
+  /* Remover a linha divisória do último item */
+  border-bottom: none;
+}
+
+/* Estilos para tarefas concluídas */
+#listaTarefas li.concluida {
+  text-decoration: line-through; /* Riscar o texto da tarefa concluída */
+  color: #999; /* Tornar a tarefa concluída menos proeminente */
+}
+
+/* Estilos para tarefas importantes */
+#listaTarefas li.importante {
+  background-color: #ffebd2; /* Cor de fundo para destacar tarefas importantes */
+}
